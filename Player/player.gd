@@ -1,19 +1,20 @@
 extends CharacterBody2D
 
 enum DIRECTION { UP, RIGHT, DOWN, LEFT }
-const ROTATION_ANGLES = [0, 90, 180, 270]
 
 var current_direction: DIRECTION = DIRECTION.UP
 var can_attack: bool = true
 var attack_cooldown: float = 0.3
 var health: int = 3
 var is_alive: bool = true
+var distance_from_center = 64
 
 @onready var attack_area: Area2D = $AttackArea
 @onready var ui = get_parent().get_node("Ui")
 
 func _ready():
 	update_rotation()
+	attack_area.position = Vector2(0, 0)
 	if not attack_area:
 		push_error("AttackArea not found!")
 	ui.update_health(health)
@@ -47,7 +48,15 @@ func handle_input():
 		try_attack("yellow")
 
 func update_rotation():
-	rotation_degrees = ROTATION_ANGLES[current_direction]
+	match current_direction:
+		DIRECTION.UP:
+			attack_area.position = Vector2(0, -distance_from_center)
+		DIRECTION.RIGHT:
+			attack_area.position = Vector2(distance_from_center, 0)
+		DIRECTION.DOWN:
+			attack_area.position = Vector2(0, distance_from_center)
+		DIRECTION.LEFT:
+			attack_area.position = Vector2(-distance_from_center, 0)
 
 func try_attack(color: String):
 	if not can_attack or not attack_area or not is_alive:
