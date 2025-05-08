@@ -38,24 +38,25 @@ func setup_movement_direction():
 			position.y = get_viewport_rect().size.y / 2
 
 func _physics_process(delta):
-	var movement = Vector2.ZERO
-	
+	var velocity = Vector2.ZERO
 	match move_direction:
 		DIRECTION.UP:
-			movement.y = -speed * delta
-		DIRECTION.RIGHT:
-			movement.x = speed * delta
+			velocity.y = -1
 		DIRECTION.DOWN:
-			movement.y = speed * delta
+			velocity.y = 1
 		DIRECTION.LEFT:
-			movement.x = -speed * delta
-	
-	move_and_collide(movement)
+			velocity.x = -1
+		DIRECTION.RIGHT:
+			velocity.x = 1
+
+	velocity = velocity.normalized() * speed
+	var collision = move_and_collide(velocity * delta)
+
+	if collision:
+		var collider = collision.get_collider()
+		if collider.name == "Player":
+			queue_free()
+
 
 func _on_visibility_notifier_screen_exited():
 	queue_free()
-
-func _on_body_entered(body):
-	if body.name == "Player":
-		body.take_damage()
-		queue_free()
