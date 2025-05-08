@@ -1,7 +1,7 @@
 extends Node2D
 
-@export var spawn_rate: float = 2.0
-@export var difficulty_increase_rate: float = 0.95
+@export var spawn_rate: float = 6.0
+@export var difficulty_increase_rate: float = 1
 
 var wave: int = 1
 var colors = ["red", "green", "blue", "yellow"]

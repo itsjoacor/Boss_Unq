@@ -5,12 +5,12 @@ enum DIRECTION { UP, RIGHT, DOWN, LEFT }
 var current_direction: DIRECTION = DIRECTION.UP
 var can_attack: bool = true
 var attack_cooldown: float = 0.3
-var health: int = 3
+var health: int = 1
 var is_alive: bool = true
 var distance_from_center = 64
 
 @onready var attack_area: Area2D = $AttackArea
-@onready var ui = get_parent().get_node("Ui")
+@onready var ui = get_parent().get_node("UI")
 
 func _ready():
 	update_rotation()
@@ -91,10 +91,16 @@ func take_damage():
 func die():
 	is_alive = false
 	queue_free()
-	get_node("/root/Main").game_over()
+	get_tree().change_scene_to_file("res://GameOver/GameOver.tscn")
 
 func _draw():
 	if Engine.is_editor_hint() and attack_area and attack_area.get_child_count() > 0:
 		var shape = attack_area.get_child(0).shape
 		if shape:
 			draw_circle(Vector2.ZERO, shape.radius, Color(1, 0, 0, 0.3))
+			
+func decrease_health():
+	health -= 1
+	ui.update_health(health)
+	if health == 0:
+		die()

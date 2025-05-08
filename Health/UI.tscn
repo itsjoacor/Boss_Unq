@@ -5,7 +5,7 @@
 [node name="Ui" type="CanvasLayer"]
 script = ExtResource("1_tnosw")
 
-[node name="Label" type="Label" parent="."]
+[node name="HealthLabel" type="Label" parent="."]
 anchors_preset = 5
 anchor_left = 0.5
 anchor_right = 0.5
@@ -14,4 +14,4 @@ offset_right = 20.0
 offset_bottom = 23.0
 grow_horizontal = 2
 size_flags_horizontal = 4
-text = "...."
+text = "Health: 1"

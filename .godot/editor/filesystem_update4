@@ -1,3 +1,9 @@
-res://Player/Player.tscn
-res://Enemy/Enemy.gd
 res://Main.tscn
+res://Main.gd
+res://Health/UI.tscn
+res://Health/UI.gd
+res://Player/player.gd
+res://Enemy/Enemy.gd
+res://Game.tscn
+res://GameOver/GameOver.tscn
+res://Menu/MainMenu.tscn

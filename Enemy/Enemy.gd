@@ -55,6 +55,7 @@ func _physics_process(delta):
 	if collision:
 		var collider = collision.get_collider()
 		if collider.name == "Player":
+			collider.decrease_health()
 			queue_free()
 
 
