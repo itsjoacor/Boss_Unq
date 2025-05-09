@@ -1,9 +1,6 @@
-res://Main.tscn
-res://Main.gd
-res://Health/UI.tscn
-res://Health/UI.gd
-res://Player/player.gd
-res://Enemy/Enemy.gd
-res://Game.tscn
 res://GameOver/GameOver.tscn
 res://Menu/MainMenu.tscn
+res://Menu/main_menu.gd
+res://Rules/Rules.tscn
+res://Rules/rules.gd
+res://Player/Player.tscn
