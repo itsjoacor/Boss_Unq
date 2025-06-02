@@ -1,9 +1,11 @@
 extends Node2D
 
-@export var spawn_rate: float = 6.0
-@export var difficulty_increase_rate: float = 1
+@export var initial_spawn_rate: float = 6.0
+@export var spawn_decrease_amount: float = 0.25
+@export var min_spawn_rate: float = 1.0  # Tiempo mínimo entre enemigos
 
 var wave: int = 1
+var current_spawn_rate: float
 var colors = ["red", "green", "blue", "yellow"]
 var directions = ["up", "right", "down", "left"]
 
@@ -11,11 +13,11 @@ var directions = ["up", "right", "down", "left"]
 @onready var player: CharacterBody2D
 
 func _ready():
-
 	spawn_timer = $SpawnTimer
 	player = $Player
 
-	spawn_timer.wait_time = spawn_rate
+	current_spawn_rate = initial_spawn_rate
+	spawn_timer.wait_time = current_spawn_rate
 	spawn_timer.timeout.connect(_on_spawn_timer_timeout)
 	spawn_timer.start()
 
@@ -23,7 +25,10 @@ func _on_spawn_timer_timeout():
 	spawn_enemy()
 	
 	wave += 1
-	spawn_timer.wait_time *= difficulty_increase_rate
+
+	# Disminuir gradualmente el tiempo de espera aka (aumentar dificultad)
+	current_spawn_rate = max(min_spawn_rate, current_spawn_rate - spawn_decrease_amount)
+	spawn_timer.wait_time = current_spawn_rate
 
 func spawn_enemy():
 	var enemy_scene = load("res://Enemy/Enemy.tscn")
