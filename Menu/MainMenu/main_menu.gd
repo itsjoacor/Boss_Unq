@@ -8,7 +8,7 @@ func _on_start_game_pressed() -> void:
 	
 	
 func _on_rules_pressed() -> void:
-	get_tree().change_scene_to_file("res://Rules/Rules.tscn")
+	get_tree().change_scene_to_file("res://Menu/Rules/Rules.tscn")
 	
 func _on_quit_pressed() -> void:
 	get_tree().quit()

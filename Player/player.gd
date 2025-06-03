@@ -91,7 +91,7 @@ func take_damage():
 func die():
 	is_alive = false
 	queue_free()
-	get_tree().change_scene_to_file("res://GameOver/GameOver.tscn")
+	get_tree().change_scene_to_file("res://Menu/GameOver/GameOver.tscn")
 
 func _draw():
 	if Engine.is_editor_hint() and attack_area and attack_area.get_child_count() > 0:
