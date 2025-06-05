@@ -9,6 +9,12 @@
 process_mode = 1
 script = ExtResource("1_u44n3")
 
+[node name="PauseMenu" parent="." instance=ExtResource("4_sb48q")]
+offset_left = 582.0
+offset_top = 153.0
+offset_right = 582.0
+offset_bottom = 153.0
+
 [node name="Player" parent="." instance=ExtResource("2_sb48q")]
 position = Vector2(580, 326)
 
@@ -16,9 +22,3 @@ position = Vector2(580, 326)
 process_mode = 1
 
 [node name="UI" parent="." instance=ExtResource("3_t88pq")]
-
-[node name="PauseMenu" parent="." instance=ExtResource("4_sb48q")]
-offset_left = 531.0
-offset_top = 76.0
-offset_right = 531.0
-offset_bottom = 76.0

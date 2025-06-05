@@ -1,8 +1,8 @@
 [gd_scene load_steps=6 format=3 uid="uid://b6fy25lor0oo1"]
 
 [ext_resource type="Script" uid="uid://ylwfmhfx32xj" path="res://Player/player.gd" id="1_q3lat"]
-[ext_resource type="Texture2D" uid="uid://c2iinvpqxk5so" path="res://assets/player.png" id="2_tok1r"]
-[ext_resource type="Texture2D" uid="uid://4r85ebd57aev" path="res://assets/images.png" id="4_ddoul"]
+[ext_resource type="PackedScene" uid="uid://bmnjiaefwo603" path="res://Shuriken/Shuriken.tscn" id="2_ddoul"]
+[ext_resource type="Texture2D" uid="uid://d3wxcrcvnbc6e" path="res://assets/Ninja2/ChatGPT Image Jun 5, 2025, 11_09_07 AM.png" id="2_tok1r"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_q3lat"]
 size = Vector2(64, 64)
@@ -12,20 +12,27 @@ size = Vector2(64, 64)
 
 [node name="Player" type="CharacterBody2D"]
 process_mode = 1
+collision_mask = 4
 script = ExtResource("1_q3lat")
+shuriken_scene = ExtResource("2_ddoul")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-2, -2.00003)
+scale = Vector2(0.298828, 0.24707)
 texture = ExtResource("2_tok1r")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_q3lat")
 
 [node name="AttackArea" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AttackArea"]
 shape = SubResource("RectangleShape2D_tok1r")
-debug_color = Color(0.947977, 0.0205262, 0.570728, 0.42)
 
 [node name="Sprite2D" type="Sprite2D" parent="AttackArea/CollisionShape2D"]
-scale = Vector2(0.25, 0.25)
-texture = ExtResource("4_ddoul")
+position = Vector2(0, 66)
+scale = Vector2(0.41, 0.345)
+
+[node name="AttackCooldownTimer" type="Timer" parent="."]
