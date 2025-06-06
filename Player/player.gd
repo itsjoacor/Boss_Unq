@@ -20,7 +20,7 @@ var has_moved := false  # Track if player has moved
 var current_direction: DIRECTION = DIRECTION.UP
 var can_attack: bool = true
 var attack_cooldown: float = 0.3
-var health: int = 1
+var health: int = 100
 var is_alive: bool = true
 var distance_from_center = 64
 
