@@ -58,6 +58,17 @@ func _physics_process(delta):
 			collider.decrease_health()
 			queue_free()
 
-
+func get_color_type() -> int:
+	return color
+	
+func _on_body_entered(body):
+	if body.is_in_group("shurikens"):
+		modulate.a = 0.5
+		await get_tree().create_timer(0.1).timeout
+		queue_free()
+		
 func _on_visibility_notifier_screen_exited():
 	queue_free()
+
+
+	

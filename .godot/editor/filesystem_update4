@@ -1,11 +1,5 @@
-res://Menu/MainMenu.tscn
-res://Player/player.gd
-res://Menu/MainMenu/MainMenu.tscn
-res://Menu/Pause/PauseMenu.tscn
-res://Menu/Pause/pause_menu.gd
+res://Menu/Rules/Rules.tscn
+res://Enemy/Enemy.gd
 res://Game.gd
-res://Game.tscn
-res://Menu/MainMenu/main_menu.gd
-res://Enemy/Enemy.tscn
-res://pause_input.gd
-res://Player/Player.tscn
+res://Player/player.gd
+res://Shuriken/shuriken.gd
