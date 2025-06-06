@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://cu0jwwl1up1ln"]
+[gd_scene load_steps=4 format=3 uid="uid://cu0jwwl1up1ln"]
 
 [ext_resource type="Script" uid="uid://nlupmnn6k4xb" path="res://Menu/Pause/pause_menu.gd" id="1_dxq0t"]
+[ext_resource type="Texture2D" uid="uid://brb07jelbwusw" path="res://assets/Backgrounds/gameplayB.jpg" id="2_oiuvi"]
+[ext_resource type="FontFile" uid="uid://dogl2xjvrmpdm" path="res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf" id="3_gvdr7"]
 
 [node name="PauseMenu" type="Control"]
 layout_mode = 3
@@ -9,35 +11,84 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+size_flags_horizontal = 4
 script = ExtResource("1_dxq0t")
 
-[node name="Label" type="Label" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "PAUSE MENU"
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1084.0
+offset_top = -375.0
+offset_right = 764.0
+offset_bottom = 977.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_oiuvi")
 
 [node name="CenterContainer" type="CenterContainer" parent="."]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Panel" type="Panel" parent="CenterContainer"]
 layout_mode = 2
 
+[node name="Label" type="Label" parent="CenterContainer/Panel"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -54.0
+offset_top = -84.0
+offset_right = 49.0
+offset_bottom = -61.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gvdr7")
+theme_override_font_sizes/font_size = 30
+text = "PAUSE MENU"
+
 [node name="VBoxContainer" type="VBoxContainer" parent="CenterContainer/Panel"]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -69.5
+offset_top = -50.5
+offset_right = 69.5
+offset_bottom = 50.5
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="Resume" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_gvdr7")
+text = "Resume"
 
 [node name="Restart" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_gvdr7")
+text = "Restart"
 
 [node name="Quit" type="Button" parent="CenterContainer/Panel/VBoxContainer"]
 layout_mode = 2
+theme_override_fonts/font = ExtResource("3_gvdr7")
+text = "Quit"
 
 [connection signal="pressed" from="CenterContainer/Panel/VBoxContainer/Resume" to="." method="_on_resume_pressed"]
 [connection signal="pressed" from="CenterContainer/Panel/VBoxContainer/Restart" to="." method="_on_restart_pressed"]

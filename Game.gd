@@ -7,7 +7,7 @@ extends Node2D
 @onready var pause_menu := $PauseMenu
 @onready var spawn_timer: Timer = $SpawnTimer
 @onready var player: CharacterBody2D = $Player
-
+@onready var healthL: CanvasLayer = $UI
 var wave: int = 1
 var current_spawn_rate: float
 var colors = ["red", "green", "blue", "yellow"]
@@ -55,8 +55,10 @@ func _input(event: InputEvent) -> void:
 
 func _pause_game() -> void:
 	get_tree().paused = true
+	healthL.visible = false
 	pause_menu.visible = true
 
 func _resume_game() -> void:
 	get_tree().paused = false
+	healthL.visible = true
 	pause_menu.visible = false
