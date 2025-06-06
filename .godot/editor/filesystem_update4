@@ -1,6 +1,11 @@
-res://Shuriken/Shuriken.tscn
-res://Shuriken/shuriken.gd
-res://Player/player.gd
 res://Player/Player.tscn
-res://Enemy/Enemy.gd
+res://Shuriken/Shuriken.tscn
 res://Enemy/Enemy.tscn
+res://Menu/MainMenu/MainMenu.tscn
+res://Menu/GameOver/GameOver.tscn
+res://Game.tscn
+res://Menu/Pause/PauseMenu.tscn
+res://Game.gd
+res://Player/player.gd
+res://Menu/Rules/Rules.tscn
+res://Menu/Rules/rules.gd

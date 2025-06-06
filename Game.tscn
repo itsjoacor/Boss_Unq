@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ccku5hx1sih1o"]
+[gd_scene load_steps=6 format=3 uid="uid://ccku5hx1sih1o"]
 
 [ext_resource type="Script" uid="uid://dwh2pyibtg1lg" path="res://Game.gd" id="1_u44n3"]
 [ext_resource type="PackedScene" uid="uid://b6fy25lor0oo1" path="res://Player/Player.tscn" id="2_sb48q"]
+[ext_resource type="Texture2D" uid="uid://brb07jelbwusw" path="res://assets/Backgrounds/gameplayB.jpg" id="2_t88pq"]
 [ext_resource type="PackedScene" uid="uid://3lrc7nbxqpal" path="res://Health/UI.tscn" id="3_t88pq"]
 [ext_resource type="PackedScene" uid="uid://cu0jwwl1up1ln" path="res://Menu/Pause/PauseMenu.tscn" id="4_sb48q"]
 
@@ -9,11 +10,12 @@
 process_mode = 1
 script = ExtResource("1_u44n3")
 
-[node name="PauseMenu" parent="." instance=ExtResource("4_sb48q")]
-offset_left = 582.0
-offset_top = 153.0
-offset_right = 582.0
-offset_bottom = 153.0
+[node name="TextureRect2" type="TextureRect" parent="."]
+offset_left = -428.0
+offset_top = -1023.0
+offset_right = 2572.0
+offset_bottom = 977.0
+texture = ExtResource("2_t88pq")
 
 [node name="Player" parent="." instance=ExtResource("2_sb48q")]
 position = Vector2(580, 326)
@@ -22,3 +24,10 @@ position = Vector2(580, 326)
 process_mode = 1
 
 [node name="UI" parent="." instance=ExtResource("3_t88pq")]
+
+[node name="PauseMenu" parent="." instance=ExtResource("4_sb48q")]
+offset_left = 581.0
+offset_top = 334.0
+offset_right = 581.0
+offset_bottom = 334.0
+size_flags_horizontal = 1

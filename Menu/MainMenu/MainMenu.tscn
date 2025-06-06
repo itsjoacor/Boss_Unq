@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://chhi37e8hcnc5"]
+[gd_scene load_steps=4 format=3 uid="uid://chhi37e8hcnc5"]
 
 [ext_resource type="Script" uid="uid://dymt40sn4bp70" path="res://Menu/MainMenu/main_menu.gd" id="1_e1xpn"]
+[ext_resource type="Texture2D" uid="uid://bhm1tcljfyx8s" path="res://assets/Backgrounds/MainMenu.jpeg" id="2_gxqt3"]
+[ext_resource type="FontFile" uid="uid://dogl2xjvrmpdm" path="res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf" id="3_gxqt3"]
 
 [node name="Main Menu" type="Control"]
 layout_mode = 3
@@ -10,6 +12,21 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_e1xpn")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -0.802083
+anchor_top = -1.04321
+anchor_right = 1.802
+anchor_bottom = 2.043
+offset_left = -11.0
+offset_top = -46.0
+offset_right = -10.9041
+offset_bottom = -45.864
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_gxqt3")
 
 [node name="Start Game" type="Button" parent="."]
 layout_mode = 1
@@ -24,6 +41,7 @@ offset_right = 48.0
 offset_bottom = -20.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gxqt3")
 text = "Start Game"
 
 [node name="Rules" type="Button" parent="."]
@@ -39,6 +57,7 @@ offset_right = 48.0
 offset_bottom = 19.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gxqt3")
 text = "Rules"
 
 [node name="Quit" type="Button" parent="."]
@@ -54,6 +73,7 @@ offset_right = 21.0
 offset_bottom = 58.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gxqt3")
 text = "Quit"
 
 [node name="Label" type="Label" parent="."]
@@ -69,6 +89,8 @@ offset_right = 20.0
 offset_bottom = -89.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_gxqt3")
+theme_override_font_sizes/font_size = 50
 text = "Ninja-Hero"
 
 [connection signal="pressed" from="Start Game" to="." method="_on_start_game_pressed"]

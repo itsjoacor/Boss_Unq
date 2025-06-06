@@ -1,10 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1749160458
-Game.gd::GDScript/GDScript::8719534674097632868::1749004190::0::1::::<>Node2D<><>0<>0<><>::
-Game.tscn::PackedScene::4935131150274991870::1749143473::0::1::::<><><>0<>0<><>::uid://dwh2pyibtg1lg::::res://Game.gd<>uid://b6fy25lor0oo1::::res://Player/Player.tscn<>uid://3lrc7nbxqpal::::res://Health/UI.tscn<>uid://cu0jwwl1up1ln::::res://Menu/Pause/PauseMenu.tscn
+::res://::1749182157
+Game.gd::GDScript::8719534674097632868::1749181729::0::1::::<>Node2D<><>0<>0<><>::
+Game.tscn::PackedScene::4935131150274991870::1749181764::0::1::::<><><>0<>0<><>::uid://dwh2pyibtg1lg::::res://Game.gd<>uid://b6fy25lor0oo1::::res://Player/Player.tscn<>uid://brb07jelbwusw::::res://assets/Backgrounds/gameplayB.jpg<>uid://3lrc7nbxqpal::::res://Health/UI.tscn<>uid://cu0jwwl1up1ln::::res://Menu/Pause/PauseMenu.tscn
+GameOvWon.jpg::CompressedTexture2D::1654091338107096130::1749180056::1749182157::1::::<><><>0<>0<>3ff90f2929fdab62bb4fcd467bcf71be<>res://.godot/imported/GameOvWon.jpg-5636b1a52255178af82f965d3b033c95.ctex::
 icon.svg::CompressedTexture2D/CompressedTexture2D::6561201839875854024::1746711704::1746715120::1::::<><><>0<>0<>5e05a9ceff4f288d68db084778de11b0<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 kunaiii.png::CompressedTexture2D/CompressedTexture2D::3181863754506934698::1749148298::1749148642::1::::<><><>0<>0<>ff89729c37e64d31c509d488419ccd72<>res://.godot/imported/kunaiii.png-e0a8a03b82015a352bf7005556101d47.ctex::
-::res://assets/::1749144951
+::res://assets/::1749179839
 background.png::CompressedTexture2D/CompressedTexture2D::3088448787345723361::1746711704::1746715120::1::::<><><>0<>0<>3f9bab0130b1b1251cd75d065ef5d590<>res://.godot/imported/background.png-1fdba8b6a966ce2c2ffc607f7c096e95.ctex::
 cannon.png::CompressedTexture2D/CompressedTexture2D::6538194791485142613::1746711704::1746715120::1::::<><><>0<>0<>38058e0cbeb795385a93a6adab1e85e8<>res://.godot/imported/cannon.png-d37649f5df114662f36ae2c69bb72fde.ctex::
 floor.png::CompressedTexture2D/CompressedTexture2D::2488080254080958458::1746711704::1746715120::1::::<><><>0<>0<>bc179928241403899902fbb279b9fc76<>res://.godot/imported/floor.png-38406586736af2fe805d7b886727ee47.ctex::
@@ -16,6 +17,11 @@ proyectile_turret.png::CompressedTexture2D/CompressedTexture2D::6115504130388957
 space.png::CompressedTexture2D/CompressedTexture2D::7346023195326725503::1746711704::1746715120::1::::<><><>0<>0<>d2e43d2af6107dbd4c12307646f3df37<>res://.godot/imported/space.png-e9b3b12e959cbbecef69e1a8ce5816dd.ctex::
 Terrain (16x16).png::CompressedTexture2D/CompressedTexture2D::4867917153001881414::1746711704::1746715120::1::::<><><>0<>0<>aab8642306a1a5d8207cf684541bf394<>res://.godot/imported/Terrain (16x16).png-08440d825000be5cd6a24cdf2c2e8ddf.ctex::
 turret.png::CompressedTexture2D/CompressedTexture2D::260025339065425233::1746711704::1746715120::1::::<><><>0<>0<>3aebfa310aaa3526a52334fe95073063<>res://.godot/imported/turret.png-608c0b2b2f2422ecd6efb28e1ad86de5.ctex::
+::res://assets/Backgrounds/::1749182185
+GameOvWon.jpg::CompressedTexture2D::2533461524112667726::1749182185::1749182186::1::::<><><>0<>0<>81b67ca50c1babb3845e5eaadcedc9be<>res://.godot/imported/GameOvWon.jpg-4f9a12d1a50ee2e8cce61749bd2c0999.ctex::
+gameplayB.jpg::CompressedTexture2D/CompressedTexture2D::3583270952909213034::1749180408::1749180471::1::::<><><>0<>0<>f15efa27c9be9f8981968b8ac4634f32<>res://.godot/imported/gameplayB.jpg-6922b166d222dd3131d9de990cccfa96.ctex::
+MainMenu.jpeg::CompressedTexture2D/CompressedTexture2D::2904127816560286528::1749179985::1749180471::1::::<><><>0<>0<>9e6435e2a1dcd266b974f661c673972f<>res://.godot/imported/MainMenu.jpeg-c2c18fd1dc49f8d29e8ce106c8847bde.ctex::
+PauseMenu.jpg::CompressedTexture2D/CompressedTexture2D::7264324912312247472::1749180007::1749180471::1::::<><><>0<>0<>545084a253f7467b854c5bc6e61e842b<>res://.godot/imported/PauseMenu.jpg-cf7fb2305ba47bc0cb30f677a2aaf241.ctex::
 ::res://assets/Fonts/::1748971704
 Xolonium-Regular.ttf::FontFile/FontFile::203828325312034698::1746711704::1746715120::1::::<><><>0<>0<>20e8956423a99015baea7b0932c61692<>res://.godot/imported/Xolonium-Regular.ttf-f15b8bba0dc8d0fceb494f21a2290a30.fontdata::
 ::res://assets/Fonts/Panchang_Complete/::1748971704
@@ -246,29 +252,31 @@ Throw__006.png::CompressedTexture2D/CompressedTexture2D::8925428805722880035::17
 Throw__007.png::CompressedTexture2D/CompressedTexture2D::3956957992128465883::1749128882::1749128932::1::::<><><>0<>0<>f7a58f173228c4160d38f87063c1d79e<>res://.godot/imported/Throw__007.png-1b3b9c9f27c0b84000fa5f44edd0b53b.ctex::
 Throw__008.png::CompressedTexture2D/CompressedTexture2D::950059687283365186::1749128882::1749128932::1::::<><><>0<>0<>adcfea72e079b2588a44d9fa70b367cc<>res://.godot/imported/Throw__008.png-b6722105edaee94fd957ff434aa68e5e.ctex::
 Throw__009.png::CompressedTexture2D/CompressedTexture2D::3795266289423414508::1749128882::1749128932::1::::<><><>0<>0<>4466acc8be5053d7615bd901b14587e8<>res://.godot/imported/Throw__009.png-ca7977d44589a44448ed147831989ab8.ctex::
-::res://Enemy/::1749151434
-Enemy.gd::GDScript::7851382621126197540::1749151434::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Enemy.tscn::PackedScene/PackedScene::8914933668174643833::1748971222::0::1::::<><><>0<>0<><>::uid://bkackhe8eiqs4::::res://assets/background.png<>uid://dj4jeid8ek03y::::res://Enemy/Enemy.gd
+::res://Enemy/::1749179673
+Enemy.gd::GDScript/GDScript::7851382621126197540::1749164143::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Enemy.tscn::PackedScene/PackedScene::8914933668174643833::1749179673::0::1::::<><><>0<>0<><>::uid://bkackhe8eiqs4::::res://assets/background.png<>uid://dj4jeid8ek03y::::res://Enemy/Enemy.gd
 ::res://Health/::1746717028
 UI.gd::GDScript/GDScript::4946767903542919647::1746716549::0::1::::<>CanvasLayer<><>0<>0<><>::
 UI.tscn::PackedScene/PackedScene::1989033238530883351::1746717028::0::1::::<><><>0<>0<><>::uid://ccqisrurnly60::::res://Health/UI.gd
 ::res://Menu/::1748969494
-::res://Menu/GameOver/::1748968026
-GameOver.tscn::PackedScene/PackedScene::2371172248481485821::1748968026::0::1::::<><><>0<>0<><>::uid://dv5udtbxxavcs::::res://Menu/GameOver/game_over.gd
+::res://Menu/GameOver/::1749182157
+GameOver.tscn::PackedScene::2371172248481485821::1749182157::0::1::::<><><>0<>0<><>::uid://dv5udtbxxavcs::::res://Menu/GameOver/game_over.gd<>uid://xtiv36u4wln3::::res://GameOvWon.jpg<>uid://dogl2xjvrmpdm::::res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf
 game_over.gd::GDScript/GDScript::8696379797901052474::1746536732::0::1::::<>Control<><>0<>0<><>::
-::res://Menu/MainMenu/::1748970659
-MainMenu.tscn::PackedScene/PackedScene::5279151343737555382::1748970659::0::1::::<><><>0<>0<><>::uid://dymt40sn4bp70::::res://Menu/MainMenu/main_menu.gd
+::res://Menu/MainMenu/::1749180867
+MainMenu.tscn::PackedScene::5279151343737555382::1749180867::0::1::::<><><>0<>0<><>::uid://dymt40sn4bp70::::res://Menu/MainMenu/main_menu.gd<>uid://bhm1tcljfyx8s::::res://assets/Backgrounds/MainMenu.jpeg<>uid://dogl2xjvrmpdm::::res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf
 main_menu.gd::GDScript/GDScript::8869773583846307597::1748969504::0::1::::<>Control<><>0<>0<><>::
-::res://Menu/Pause/::1749143473
-PauseMenu.tscn::PackedScene::6228814598114369571::1749143473::0::1::::<><><>0<>0<><>::uid://nlupmnn6k4xb::::res://Menu/Pause/pause_menu.gd
+::res://Menu/Pause/::1749181754
+PauseMenu.tscn::PackedScene::6228814598114369571::1749181754::0::1::::<><><>0<>0<><>::uid://nlupmnn6k4xb::::res://Menu/Pause/pause_menu.gd<>uid://brb07jelbwusw::::res://assets/Backgrounds/gameplayB.jpg<>uid://dogl2xjvrmpdm::::res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf
 pause_menu.gd::GDScript/GDScript::936404900348154659::1748970973::0::1::::<>Control<><>0<>0<><>::
-::res://Menu/Rules/::1748969494
+::res://Menu/Rules/::1749182138
 rules.gd::GDScript/GDScript::7347776835988740992::1747401753::0::1::::<>Control<><>0<>0<><>::
-Rules.tscn::PackedScene/PackedScene::2011041727751450721::1748969494::0::1::::<><><>0<>0<><>::uid://dcxk2tqf4lm1u::::res://Menu/Rules/rules.gd
-::res://Player/::1749155484
-player.gd::GDScript::1708585746770699443::1749155452::0::1::::<>CharacterBody2D<><>0<>0<><>::
-Player.tscn::PackedScene::4574103742857396998::1749155484::0::1::::<><><>0<>0<><>::uid://ylwfmhfx32xj::::res://Player/player.gd<>uid://d3wxcrcvnbc6e::::res://assets/Ninja2/ChatGPT Image Jun 5, 2025, 11_09_07 AM.png
-::res://Shuriken/::1749155470
+Rules.tscn::PackedScene::2011041727751450721::1749182138::0::1::::<><><>0<>0<><>::uid://dcxk2tqf4lm1u::::res://Menu/Rules/rules.gd<>uid://dogl2xjvrmpdm::::res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf
+::res://Player/::1749181559
+player.gd::GDScript::1708585746770699443::1749181559::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene/PackedScene::4574103742857396998::1749179673::0::1::::<><><>0<>0<><>::uid://ylwfmhfx32xj::::res://Player/player.gd<>uid://bmnjiaefwo603::::res://Shuriken/Shuriken.tscn<>uid://d3wxcrcvnbc6e::::res://assets/Ninja2/ChatGPT Image Jun 5, 2025, 11_09_07 AM.png
+::res://Shuriken/::1749179673
+shuriken.gd::GDScript/GDScript::3252325435626516100::1749165306::0::1::::<>Area2D<><>0<>0<><>::
+Shuriken.tscn::PackedScene/PackedScene::3256084463874785242::1749179673::0::1::::<><><>0<>0<><>::uid://bmlplboeteosy::::res://Shuriken/shuriken.gd<>uid://b3pai8mldel7::::res://Shuriken/shuriken_200x200.png
 shuriken_200x200.png::CompressedTexture2D/CompressedTexture2D::128902647368597678::1749149299::1749153587::1::::<><><>0<>0<>63f30c3d038eb815e8e517a4edb10a22<>res://.godot/imported/shuriken_200x200.png-5a1c006cc7cc4e0680d541011e91f574.ctex::
 ::res://Sprites/::1749148510
 idle_front_noBKG (2).png::CompressedTexture2D/CompressedTexture2D::8724268023458351513::1749147245::1749147278::1::::<><><>0<>0<>1851dbbb66b02ecb71b67b2fb74629e0<>res://.godot/imported/idle_front_noBKG (2).png-c915cc5022b02208a0293507d6788f50.ctex::

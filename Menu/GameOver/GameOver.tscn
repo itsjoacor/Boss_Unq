@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=3 uid="uid://81u4i0c8ko4l"]
+[gd_scene load_steps=4 format=3 uid="uid://81u4i0c8ko4l"]
 
 [ext_resource type="Script" uid="uid://dv5udtbxxavcs" path="res://Menu/GameOver/game_over.gd" id="1_bed4b"]
+[ext_resource type="Texture2D" uid="uid://xtiv36u4wln3" path="res://GameOvWon.jpg" id="2_2yisb"]
+[ext_resource type="FontFile" uid="uid://dogl2xjvrmpdm" path="res://assets/Fonts/Panchang_Complete/Panchang_Complete/Fonts/OTF/Panchang-Bold.otf" id="3_0brij"]
 
 [node name="Game Over" type="Control"]
 layout_mode = 3
@@ -10,6 +12,15 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_bed4b")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_2yisb")
 
 [node name="Play Again" type="Button" parent="."]
 layout_mode = 1
@@ -24,6 +35,7 @@ offset_right = 48.0
 offset_bottom = 15.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_0brij")
 text = "Play Again"
 
 [node name="Quit" type="Button" parent="."]
@@ -39,6 +51,7 @@ offset_right = 21.0
 offset_bottom = 54.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_0brij")
 text = "Quit"
 
 [node name="Label" type="Label" parent="."]
@@ -48,12 +61,14 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -98.0
-offset_top = -103.5
-offset_right = 98.0
-offset_bottom = -80.5
+offset_left = -120.0
+offset_top = -73.0
+offset_right = 133.0
+offset_bottom = -35.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_fonts/font = ExtResource("3_0brij")
+theme_override_font_sizes/font_size = 30
 text = "Game Over!"
 
 [connection signal="pressed" from="Play Again" to="." method="_on_play_again_pressed"]
